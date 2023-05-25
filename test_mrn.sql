@@ -8,7 +8,7 @@ create table #temptable1
 
 
 -- #SECUREMRN_START ######################################
-    -- HELLOcommands with MRNs go here, paste from your secured file
+    -- commands with MRNs go here, paste from your secured file
 -- #SECUREMRN_END #######################################
 
 ---
@@ -36,6 +36,7 @@ LEFT JOIN patient pat
     LEFT JOIN ZC_SEX
        ON pat.sex_c = ZC_SEX.INTERNAL_ID
 order by MRN desc--test
+--test
 --test
 --test
 --test
