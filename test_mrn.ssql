@@ -17,6 +17,7 @@ insert into #temptable1(MRN, ColDateTime) VALUES (765432,'2022-06-2 10:01');
 ---
 --test
 --test2
+--das
 select distinct
     tt1.MRN,
     -- pat.PAT_ID,
