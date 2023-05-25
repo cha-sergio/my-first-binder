@@ -38,4 +38,4 @@ LEFT JOIN patient pat
     ON pat.pat_id = ii.pat_id
     LEFT JOIN ZC_SEX
        ON pat.sex_c = ZC_SEX.INTERNAL_ID
-order by MRN desc
+order by MRN desc--test
