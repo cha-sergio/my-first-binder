@@ -1,1 +1,2 @@
 *.csv filter=gitignore
+*.txt filter=securemrn
