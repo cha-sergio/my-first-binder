@@ -1,6 +1,6 @@
 [filter "securemrn"]
-        clean = "sed -n '1,/#SECUREMRN_START/p;/#SECUREMRN_END/,$p;/#SECUREMRN_START/a\    -- commands with MRNs go here, paste from your secured file'"
+        clean = "sed -n '1,/#SECUREMRN_START/p;/#SECUREMRN_END/,$p;/#SECUREMRN_START/a\\    -- tcommands with MRNs go here, paste from your secured file'"
         smudge = cat
 [filter "securemrn2"]
-        clean = "sed -n '1,/#SECUREMRN_START/p;/#SECUREMRN_END/,$p;/#SECUREMRN_START/a\    -- HELLOcommands with MRNs go here, paste from your secured file'"
+        clean = "sed -n '1,/#SECUREMRN_START/p;/#SECUREMRN_END/,$p;/#SECUREMRN_START/a\\    -- HELLOcommands with MRNs go here, paste from your secured file'"
         smudge = cat
