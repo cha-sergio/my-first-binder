@@ -8,13 +8,15 @@ create table #temptable1
 
 
 -- #SECUREMRN_START ######################################
-    -- commands with MRNs go here, paste from your secured file
+insert into #temptable1(MRN, ColDateTime) VALUES (12345,'2022-03-13 11:30');
+insert into #temptable1(MRN, ColDateTime) VALUES (123,'2022-04-29 9:21');
+insert into #temptable1(MRN, ColDateTime) VALUES (098765,'2022-08-4 8:29');
+insert into #temptable1(MRN, ColDateTime) VALUES (765432,'2022-06-2 10:01');
 -- #SECUREMRN_END #######################################
 
 ---
 --test
 --test2
---test
 select distinct
     tt1.MRN,
     -- pat.PAT_ID,
@@ -36,7 +38,3 @@ LEFT JOIN patient pat
     LEFT JOIN ZC_SEX
        ON pat.sex_c = ZC_SEX.INTERNAL_ID
 order by MRN desc--test
---test
---test
---test
---test

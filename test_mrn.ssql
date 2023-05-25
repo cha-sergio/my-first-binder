@@ -17,7 +17,6 @@ insert into #temptable1(MRN, ColDateTime) VALUES (765432,'2022-06-2 10:01');
 ---
 --test
 --test2
---das
 select distinct
     tt1.MRN,
     -- pat.PAT_ID,
@@ -39,7 +38,3 @@ LEFT JOIN patient pat
     LEFT JOIN ZC_SEX
        ON pat.sex_c = ZC_SEX.INTERNAL_ID
 order by MRN desc--test
---test
---test
---test
---test
